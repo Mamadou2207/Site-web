@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', "Poppins", Tahoma, sans-serif;
+    
+}
+
+.fond {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.450),rgba(0, 0, 0, 0.450)),url(../images/image1.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+    right: 50px;
+    top: 0px;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #D38672;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.avatar {
+    border-radius: 15px;
+    height: 150px;
+    margin-top: 0px;
+}
+.contenu {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+
+}
+.contenu h1 {
+    font-size: 70px;
+    margin-top: 0px;
+    text-decoration: line-through #D38672;
+}
+.contenu p {
+    margin: 20px auto;
+    font-weight: 20px;
+    line-height: 25px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.400);
+
+}
+
+.reseaux {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 230px;
+    height: 50px;
+    border-radius: 99px;
+    background-color: #D38672;
+    position: fixed;
+    left: 1000px;
+    top: 107%;
+}
+.reseaux:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.icone{
+    transition: all .2s ease-in-out;
+}
+
+.icone:hover {
+    transform: scale(2.5);
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+.categorie {
+    text-align: center;
+    background-color: antiquewhite;
+    height: 500px;
+
+}
+
+
+img:not(.avatar,.logo,.icon) {
+    margin-top: 50px;
+    height: 200px;
+    transition: all 0.4s ease-in-out;
+}
+
+img:hover:not(.avatar,.logo,.icon) {
+    transform: translateY(-30px);
+    transition: all 0.4s ease-in-out;
+}
+
+h2 {
+    font-family: 'Aharoni', 'Poppins', sans-serif;
+    color: #945545;
+    font-size: 40px;
+    text-decoration: line-through #D38672;
+    text-decoration-thickness: 6px;
+    margin-top: 300px;
+}
+h3 {
+    margin-top: 20px;
+    font-family: 'Aharoni', 'Poppins', sans-serif;
+    color: #D38672;
+    font-size: 25px;
+}
